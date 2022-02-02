@@ -1,0 +1,159 @@
+:root {
+    --text-colour: #494f55;
+    --white-colour: white;
+    --black-colour: black;
+    --blue-violet: blueviolet;
+    --gray-colour: gray;
+    --font-family: "Nunito", serif;
+}
+
+::selection {
+    color: var(--white-colour);
+    background: var(--blue-violet);
+}
+
+button {
+    user-select: none;
+}
+
+.Para {
+    
+}
+
+
+.Para {
+    /* The image used */
+    background-image: url('./image/parallax.jpg');
+    height: 160vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+#about1 {
+    padding-top: 30vh;
+}
+
+#about2 {
+    background-color: var(--white-colour);
+    margin: 0 5vw 15vh 5vw;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+    box-shadow: 12px 15px 40px -5px var(--black-colour);
+}
+
+#about2:hover {
+    box-shadow: 12px 15px 40px -30px var(--black-colour);
+}
+
+#about2 h2 {
+    padding: 10px 0 10px 0;
+    font-family: var(--font-family);
+    color: var(--text-colour);
+}
+
+#about2 p {
+    padding: 10px 0 10px 0;
+    font-family: var(--font-family);
+    font-size: 17px;
+    color: var(--text-colour);
+    line-height: 1.8;
+    word-spacing: 4px;
+}
+
+#about2 h4 {
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: var(--text-colour);
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+}
+
+#about2 h4:hover {
+    color: var(--blue-violet);
+    text-shadow: 2px 2px 4px var(--text-colour);
+}
+
+.me {
+    display: flex;
+    padding: 5vw;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+strong {
+    color:tomato;
+}
+.myself{
+    flex:60;
+}
+.detail {
+    flex: 40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail a {
+    text-decoration: none;
+}
+
+.detail .span {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--gray-colour);
+    border-radius: 10px;
+}
+
+.client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vw 0;
+}
+
+.client span {
+    width: 1px;
+    height: 100px;
+    background-color: var(--gray-colour);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 873px) {
+    .client{
+        display: none;
+    }
+    #about2 {
+        background-color: var(--white-colour);
+        margin: 0px 20px 50px 20px;
+    }
+    .detail {
+        width: 100%;
+    }
+    .me {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    #box2{
+        padding:5px;
+    }
+  }
+
+@media screen and (max-width: 453px) {
+    .Para {
+        height: 170vh;   
+    }
+}
+@media screen and (max-width: 323px) {
+    .Para {
+        height: 210vh;   
+    }
+}

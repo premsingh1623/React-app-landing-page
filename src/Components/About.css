@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --gray-colour: #8a888c;
+    --white-colour: white;
+    --black-colour: black;
+    --blue-violet: blueviolet;
+    --main-colour: #47267c;
+    /* --home-button-colour: rgb(20 1 40); */
+    /* --navbar-text-colour: #d9c3e7; */
+    /* --strong-colour: #98e41d; */
+    --about-colour: rgb(251, 242, 255);
+    --background-colour: #fbf4f0ed;
+    /* --resume-text: #63686b; */
+    --heading-colour: #beafcd;
+    /* --navHover-colour: #f1ebf5; */
+    /* --facebook-colour: rgb(25, 0, 255); */
+    /* --instagram-colour: rgb(240, 97, 180); */
+    /* --twitter-colour: rgb(73, 176, 236); */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+::selection {
+    color: var(--white-colour);
+    background: var(--main-colour);
+}
+
+img {
+    user-select: none;
+}
+
+button {
+    user-select: none;
+}
+#about {
+    height: fit-content;
+    padding: 50px 50px 100px 50px;
+  }
+  .about-heading {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  .about-heading div:nth-child(1) {
+    flex: 80%;
+    word-spacing: 5px;
+    color: var(--heading-colour);
+    font-size: 0.8em;
+  }
+  .about-heading div:nth-child(2) {
+    flex: 10%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray-colour);
+    font-size: 1.5em;
+    margin: 1rem 0;
+  }
+  .about-heading i {
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  #about div:nth-child(2) h1 {
+    font-size: 1.5em;
+  }
+  #about div:nth-child(4) h1 {
+    color: var(--gray-colour);
+    font-size: 0.9em;
+  }
+  .about-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 3rem 0;
+  }
+  
+  .about-detail > div {
+    flex: 1 1 260px;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.4s;
+    height: 270px;
+  }
+  .about-detail > div:hover {
+    border-radius: 0;
+  }
+  
+  .about-detail .about-item1 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    justify-content: space-evenly;
+    background-color: var(--background-colour);
+  }
+  
+  .about-item1 img {
+    display: block;
+    border-radius: 15px;
+    margin: auto;
+  }
+  .about-item1 div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-item1 h6 {
+    font-size: 12px;
+  }
+  .about-item1 p {
+    font-size: 10px;
+    color: var(--gray-colour);
+  }
+  .about-cross {
+    user-select: none;
+    width: 35px;
+    text-align: center;
+    height: 37px;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 3px 3px 20px -1px var(--black-colour);
+    background-color: var(--main-colour);
+    border-radius: 9px;
+    padding-top: 0px;
+  }
+  .about-cross:hover {
+    background-color: var(--blue-violet);
+    transition-duration: 0.4s;
+  }
+  .about-cross a {
+    color: var(--white-colour);
+    text-decoration: none;
+  }
+  .about-item2 h6 {
+    font-size: 12px;
+  }
+  .about-item2 p {
+    font-size: 10px;
+    color: var(--gray-colour);
+  }
+  .about-item2 img {
+    border-radius: 5px;
+  }
+  .item21 {
+    background-color: var(--about-colour);
+    flex: 50%;
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .item22 {
+    flex: 35%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  .item22 h6 {
+    margin-top: 0.5rem;
+    font-size: 10px;
+  }
+  .item22 p {
+    font-size: 8px;
+  }
+  .item22 div:nth-child(1) {
+    padding-top: 10px;
+    width: 45%;
+    margin-right: 5%;
+    border-radius: 15px;
+    background-color: var(--about-colour);
+  }
+  .item22 div:nth-child(2) {
+    padding-top: 10px;
+    width: 45%;
+    margin-left: 5%;
+    background-color: var(--main-colour);
+    border-radius: 15px;
+  }
+  .item22 div:nth-child(2) h6 {
+    color: var(--white-colour);
+  }
+  .about-item3 {
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 5px 5px 30px -5px var(--black-colour);
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(./image/image1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .item31 {
+    margin: 2rem 2rem;
+    color: var(--white-colour);
+  }
+  .item31 h5,
+  .item31 h6 {
+    font-size: 25px;
+  }
+  .item32 {
+    align-self: end;
+    margin: 7%;
+    min-width: 35px;
+    text-align: center;
+    height: 37px;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 3px 3px 20px -1px var(--black-colour);
+    background-color: var(--main-colour);
+    border-radius: 9px;
+  }
+  .item32 a {
+    color: var(--white-colour);
+    text-decoration: none;
+  }
+  .about-item4 {
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 5px 5px 30px -5px var(--black-colour);
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(./image/image2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .about-item5 {
+    width: 80%;
+    display: flex;
+    border-radius: 150px;
+    box-shadow: 10px 10px 30px -6px var(--black-colour);
+    background-color: var(--white-colour);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-item5 h5 {
+    font-size: 30px;
+  }
+  .about-item5 p {
+    color: var(--gray-colour);
+  }
+  .about-item6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-image: linear-gradient(
+      90deg,
+      var(--blue-violet),
+      var(--black-colour)
+    );
+  }
+  .about-item6 h5 {
+    font-size: 40px;
+    color: var(--white-colour);
+  }
+  .about-item6 p {
+    color: var(--white-colour);
+  }
+  
+
+  @media screen and (max-width: 1120px) {
+    
+    #about {
+      margin-left: 0px;
+      padding: 50px 50px 100px 50px;
+    }
+  }
+  @media screen and (max-width: 842px) {
+    
+    .about-heading div:nth-child(2) {
+      font-size: 1rem;
+    }
+    
+  }
+  @media screen and (max-width: 420px) {
+    #about {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    
+  }
+  @media screen and (max-width: 295px) {
+    .item31 h5,
+    .item31 h6 {
+      font-size: 20px;
+    }
+  }
+  
